@@ -66,26 +66,32 @@
             font-size: 1.8em;
         }
 
-        /* Layout for bio section */
         .bio {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            text-align: justify;
         }
 
-        /* Make the image larger and keep the rectangular shape */
         .bio img {
-            width: 300px;
+            width: 200px;
             height: auto;
             margin-left: 20px;
         }
 
         .bio p {
             font-size: 1.2em;
-            max-width: 70%;
             text-align: justify;
+            max-width: 66%; /* Esto asegura que el texto ocupe el 66% del ancho, lo que da una proporción 2:1 */
             margin-right: 20px;
+        }
+
+        .publications ul {
+            list-style-type: square;
+        }
+
+        .curriculum ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
 
         footer {
@@ -110,9 +116,9 @@
         <a href="curriculum.html">Curriculum</a>
     </nav>
 
-    <div class="container">
-        <!-- Bio section -->
-        <section id="bio">
+    <!-- Bio Section -->
+    <div class="container" id="bio">
+        <section>
             <h2>Bio</h2>
             <div class="bio">
                 <div>
@@ -132,6 +138,42 @@
                 </div>
                 <img src="foto web (2).jpeg" alt="Foto de Camila Ortiz Inostroza">
             </div>
+        </section>
+    </div>
+
+    <!-- Publications Section -->
+    <div class="container" id="publications">
+        <section>
+            <h2>Publications</h2>
+            <div class="publications">
+                <ul>
+                    <li><strong>[Título de la Publicación 1]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
+                    <li><strong>[Título de la Publicación 2]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
+                    <li><strong>[Título de la Publicación 3]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Curriculum Section -->
+    <div class="container" id="curriculum">
+        <section>
+            <h2>Curriculum Vitae</h2>
+            <p><strong>Download my CV here:</strong></p>
+            <a href="path-to-your-cv.pdf" target="_blank">Download CV (PDF)</a>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <section>
+            <h2>Contact me</h2>
+            <p>For more information, feel free to reach out to me:</p>
+            <ul>
+                <li>Email: camila.ortiz@uc.cl</li>
+                <li>Phone: +56 9 1234 5678</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/camila-ortiz-inostroza">https://www.linkedin.com/in/camila-ortiz-inostroza</a></li>
+            </ul>
         </section>
     </div>
 
