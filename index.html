@@ -73,55 +73,16 @@
             align-items: center;
         }
 
+        /* Make the image larger and keep the rectangular shape */
         .bio img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 300px;
+            height: auto;
             margin-left: 20px;
         }
 
         .bio p {
             font-size: 1.2em;
             max-width: 70%;
-        }
-
-        /* Tabs styles */
-        .tabs {
-            margin-top: 20px;
-        }
-
-        .tabs nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #4b46d4;
-            padding: 10px 0;
-        }
-
-        .tabs nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-
-        .tabs nav a.active {
-            background-color: #5B41DE;
-        }
-
-        .tab-content {
-            display: none;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .publications ul {
-            list-style-type: square;
         }
 
         footer {
@@ -140,8 +101,9 @@
     </header>
 
     <nav>
-        <a href="#bio">Bio</a>
-        <a href="#tabs">Publications & Contact</a>
+        <a href="index.html">Bio</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact me</a>
     </nav>
 
     <div class="container">
@@ -155,51 +117,11 @@
                 <img src="foto web (2).jpeg" alt="Foto de Camila Ortiz Inostroza">
             </div>
         </section>
-
-        <!-- Tabs for Publications and Contact -->
-        <div id="tabs" class="tabs">
-            <nav>
-                <a href="#publications" class="active" onclick="openTab(event, 'publications')">Publications</a>
-                <a href="#contact" onclick="openTab(event, 'contact')">Contact me</a>
-            </nav>
-
-            <!-- Tab content for Publications -->
-            <div id="publications" class="tab-content active">
-                <h2>Publicaciones Seleccionadas</h2>
-                <div class="publications">
-                    <ul>
-                        <li><strong>[Título de la Publicación 1]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
-                        <li><strong>[Título de la Publicación 2]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
-                        <li><strong>[Título de la Publicación 3]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tab content for Contact me -->
-            <div id="contact" class="tab-content">
-                <h2>Contact me</h2>
-                <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:cfortiz3@uc.cl">cfortiz3@uc.cl</a></p>
-            </div>
-        </div>
     </div>
 
     <footer>
         <p>&copy; 2024, Camila Ortiz Inostroza. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove("active");
-            }
-            tablinks = document.querySelectorAll(".tabs nav a");
-            tablinks.forEach(link => link.classList.remove("active"));
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
-    </script>
 
 </body>
 </html>
