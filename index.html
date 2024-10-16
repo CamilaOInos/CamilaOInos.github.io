@@ -3,68 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>[Tu Nombre] - Sitio Web Personal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
+
+        header {
+            background-color: #4F5B66;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #E63946;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: 50px;
         }
-        h1 {
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #E63946;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .bio {
             text-align: center;
         }
-        img {
-            display: block;
-            margin: 0 auto;
+
+        .bio img {
             border-radius: 50%;
-            max-width: 200px;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
         }
-        .description {
-            text-align: center;
-            margin-top: 20px;
+
+        .bio p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
         }
-        .curriculum {
-            margin-top: 30px;
+
+        .publications ul {
+            list-style-type: square;
         }
-        .curriculum a {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #007BFF;
+
+        footer {
+            background-color: #4F5B66;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .curriculum a:hover {
-            background-color: #0056b3;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>[Tu Nombre]</h1>
+    </header>
+
+    <nav>
+        <a href="#bio">Biografía</a>
+        <a href="#publications">Publicaciones</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
     <div class="container">
-        <h1>¡Hola! Soy [Tu Nombre]</h1>
-        <!-- Aquí va tu foto -->
-        <img src="tu-foto.jpg" alt="Mi Foto">
 
-        <!-- Aquí va tu descripción -->
-        <div class="description">
-            <p>Esta es una breve descripción sobre mí. Puedes hablar sobre tu experiencia profesional, tus habilidades, intereses, y cualquier otra cosa que quieras compartir.</p>
-        </div>
+        <section id="bio">
+            <h2>Biografía</h2>
+            <div class="bio">
+                <img src="tu-foto.jpg" alt="Tu Foto">
+                <p>Soy [Tu Nombre], profesor(a) e investigador(a) en el campo de [Campo de Especialización]. Mis áreas de investigación incluyen [temas de investigación]. He publicado numerosos artículos en revistas internacionales y he participado en conferencias en todo el mundo.</p>
+            </div>
+        </section>
 
-        <!-- Aquí va el enlace a tu currículum -->
-        <div class="curriculum">
-            <h2>Mi Curriculum</h2>
-            <a href="tu-curriculum.pdf" target="_blank">Descargar Curriculum</a>
-        </div>
+        <section id="publications">
+            <h2>Publicaciones Seleccionadas</h2>
+            <div class="publications">
+                <ul>
+                    <li><strong>[Título de la Publicación 1]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
+                    <li><strong>[Título de la Publicación 2]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
+                    <li><strong>[Título de la Publicación 3]</strong>, en <em>[Revista / Conferencia]</em>, año.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:tucorreo@dominio.com">tucorreo@dominio.com</a></p>
+        </section>
+
     </div>
+
+    <footer>
+        <p>&copy; [Año Actual] [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
